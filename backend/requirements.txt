@@ -13,10 +13,12 @@ pydantic==2.5.3
 pydantic-settings==2.1.0
 python-dotenv==1.0.0
 
-# Web Scraping
+# Exa API (AI-powered search)
+exa-py==1.0.9
+
+# Web Scraping (legacy - keeping for VC firm career pages)
 beautifulsoup4==4.12.3
 lxml==5.1.0
-playwright==1.41.0
 httpx==0.26.0
 requests==2.31.0
 

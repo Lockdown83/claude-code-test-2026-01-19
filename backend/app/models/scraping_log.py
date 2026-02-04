@@ -28,8 +28,8 @@ class ScrapingLog(Base):
     completed_at = Column(DateTime)
     duration_seconds = Column(Float)
 
-    # Additional metadata
-    metadata = Column(Text)  # JSON for additional info
+    # Additional data
+    extra_data = Column(Text)  # JSON for additional info
 
     def __repr__(self):
         return f"<ScrapingLog(id={self.id}, source='{self.source}', status='{self.status}')>"

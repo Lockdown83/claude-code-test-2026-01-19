@@ -61,8 +61,13 @@ async def health_check():
     return {"status": "healthy"}
 
 
-# TODO: Add API routes here
-# from app.api.routes import jobs, applications, scraping
-# app.include_router(jobs.router, prefix="/api/jobs", tags=["jobs"])
-# app.include_router(applications.router, prefix="/api/applications", tags=["applications"])
-# app.include_router(scraping.router, prefix="/api/scraping", tags=["scraping"])
+# Include API routes
+from app.api.routes import jobs, applications, scraping, startups, dealflow, dealflow_scraping, dashboard
+
+app.include_router(jobs.router, prefix="/api/jobs", tags=["jobs"])
+app.include_router(applications.router, prefix="/api/applications", tags=["applications"])
+app.include_router(scraping.router, prefix="/api/scraping", tags=["scraping"])
+app.include_router(startups.router, prefix="/api/startups", tags=["startups"])
+app.include_router(dealflow.router, prefix="/api/dealflow", tags=["dealflow"])
+app.include_router(dealflow_scraping.router, prefix="/api/dealflow-scraping", tags=["dealflow-scraping"])
+app.include_router(dashboard.router, prefix="/api/dashboard", tags=["dashboard"])

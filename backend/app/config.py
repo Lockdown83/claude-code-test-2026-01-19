@@ -14,6 +14,9 @@ class Settings(BaseSettings):
     # Database
     database_url: str = "sqlite+aiosqlite:///./vc_jobs.db"
 
+    # Exa API
+    exa_api_key: str = ""
+
     # CORS
     allowed_origins: Union[List[str], str] = ["http://localhost:5173", "http://localhost:3000"]
 
