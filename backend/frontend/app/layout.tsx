@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from '@/components/theme-provider';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { Header } from '@/components/layout/Header';
+import { GamificationSidebar } from '@/components/layout/GamificationSidebar';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
                 {children}
               </main>
             </div>
+            <GamificationSidebar />
           </div>
         </ThemeProvider>
       </body>
